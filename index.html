@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRO10 | Entrenamiento y Rendimiento</title>
+    <link rel="icon" type="image/svg+xml" href="iconos/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/menu.js" defer></script>
+</head>
+<body>
+    <a class="saltar" href="#contenido">Ir al contenido</a>
+
+    <header class="cabecera">
+        <div class="contenedor barra">
+            <a class="marca" href="#inicio" aria-label="PRO10, ir al inicio">
+                <img src="iconos/favicon.svg" alt="Logo PRO10" width="40" height="40">
+                <span>PRO<span class="text-neon">10</span></span>
+            </a>
+
+            <button id="boton-menu" class="hamburguesa" type="button"
+                    aria-controls="navegacion" aria-expanded="false" aria-label="Abrir menú">
+                <span class="lineas" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span id="texto-menu">Menú</span>
+            </button>
+
+            <nav id="navegacion" class="navegacion" aria-label="Navegación principal">
+                <ul class="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Enfoque</a></li>
+                    <li>
+                        <details id="resolver" class="desplegable">
+                            <summary>Rutinas</summary>
+                            <ul class="submenu">
+                                <li><a href="#tren-superior">Tren Superior</a></li>
+                                <li><a href="#tren-inferior">Tren Inferior</a></li>
+                                <li><a href="#pliometria">Pliometría</a></li>
+                                <li><a href="#cancha">Velocidad en Cancha</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li><a href="#footer">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenido">
+        <section class="presentacion" id="inicio" tabindex="-1">
+            <div class="contenedor">
+                <p class="etiqueta">PREPARACIÓN FÍSICA APLICADA AL FÚTBOL</p>
+                <h1>Fuerza, pliometría y ritmo de juego</h1>
+                <p>Planificación semanal enfocada en ganar fuerza en gimnasio y transferirla a la aceleración, el regate y el cambio de ritmo en cancha.</p>
+                <a class="boton" href="#galeria">Ver rutina completa</a>
+            </div>
+        </section>
+
+        <section class="seccion" id="nosotros" tabindex="-1">
+            <div class="contenedor">
+                <p class="etiqueta">ESTRUCTURA SEMANAL</p>
+                <h2>Cómo se divide el entrenamiento</h2>
+                <p>El programa organiza la carga en tres bloques principales para mejorar la potencia física sin llegar con fatiga muscular al partido del fin de semana.</p>
+
+                <div class="resumen-bloques">
+                    <div class="bloque-info">
+                        <span class="etiqueta">LUNES Y JUEVES</span>
+                        <h3>Tren Superior</h3>
+                        <p>Trabajo de fuerza en pecho, espalda y hombros para proteger el balón, ganar duelos cuerpo a cuerpo y mantener una postura firme.</p>
+                    </div>
+                    <div class="bloque-info">
+                        <span class="etiqueta">MARTES Y VIERNES</span>
+                        <h3>Tren Inferior</h3>
+                        <p>Ejercicios compuestos e isquiotibiales orientados a la potencia de disparo, estabilidad de rodilla y prevención de lesiones.</p>
+                    </div>
+                    <div class="bloque-info">
+                        <span class="etiqueta">SÁBADOS</span>
+                        <h3>Pliometría y Cancha</h3>
+                        <p>Saltos reactivos, salidas cortas y cambios de dirección para ganar explosividad en los primeros metros como volante ofensivo o extremo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion fondo-suave" id="galeria" tabindex="-1">
+            <div class="contenedor">
+                <p class="etiqueta">PLAN DE 16 EJERCICIOS</p>
+                <p class="introduccion">Cuatro ejercicios clave por cada bloque de la semana.</p>
+
+                <h3 class="titulo-bloque">1. Tren Superior</h3>
+                <div class="fila-galeria" id="tren-superior" tabindex="-1">
+                    <div class="tarjeta">
+                        <img src="imagenes/imagen1.png" alt="Ejercicio de press inclinado con mancuernas" width="600" height="400" loading="lazy">
+                        <div class="texto-tarjeta">
+                            <h3>Press Inclinado</h3>
+                            <p>4 series x 8 reps con mancuernas para fuerza de empuje.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="imagenes/imagen2.png" alt="Ejercicio de press de hombros sentado" width="600" height="400" loading="lazy">
+                        <div class="texto-tarjeta">
+                            <h3>Press de Hombros</h3>
+                            <p>4 series x 10 reps controladas para fuerza de deltoides.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="imagenes/imagen3.png" alt="Ejercicio de jalón al pecho en polea" width="600" height="400" loading="lazy">
+                        <div class="texto-tarjeta">
+                            <h3>Jalón al Pecho</h3>
+                            <p>4 series x 10 reps enfocadas en amplitud y tracción dorsal.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="imagenes/imagen4.png" alt="Ejercicio de remo unilateral en polea" width="600" height="400" loading="lazy">
+                        <div class="texto-tarjeta">
+                            <h3>Remo Unilateral</h3>
+                            <p>3 series x 12 reps por brazo para densidad de espalda.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="titulo-bloque">2. Tren Inferior</h3>
+                <div class="fila-galeria" id="tren-inferior" tabindex="-1">
+                    <div class="tarjeta">
+                        <img src="imagenes/imagen5.png" alt="Ejercicio de sentadilla libre con barra" width="600" height="400" loading="lazy">
+                        <div class="texto-tarjeta">
+                            <h3>Sentadilla Base</h3>
+                            <p>4 series x 8 reps priorizando técnica y profundidad.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="imagenes/imagen6.png" alt="Ejercicio de peso muerto rumano con barra" width="600" height="400" loading="lazy">
+                        <div class="texto-tarjeta">
+                            <h3>Peso Muerto Rumano</h3>
+                            <p>4 series x 10 reps para fortalecer isquiotibiales y glúteo.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="imagenes/imagen7.png" alt="Ejercicio en prensa inclinada de piernas" width="600" height="400" loading="lazy">
+                        <div class="texto-tarjeta">
+                            <h3>Prensa de Piernas</h3>
+                            <p>3 series x 12 reps de empuje pesado sin carga lumbar.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="imagenes/imagen8.png" alt="Ejercicio de sentadilla búlgara con mancuernas" width="600" height="400" loading="lazy">
+                        <div class="texto-tarjeta">
+                            <h3>Sentadilla Búlgara</h3>
+                            <p>3 series x 10 reps por pierna para fuerza y estabilidad.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="titulo-bloque">3. Pliometría</h3>
+                <div class="fila-galeria" id="pliometria" tabindex="-1">
+                    <div class="tarjeta">
+                        <img src="imagenes/imagen9.png" alt="Saltos al cajón pliométrico" width="600" height="400" loading="lazy">
+                        <div class="texto-tarjeta">
+                            <h3>Box Jumps</h3>
+                            <p>4 series x 5 saltos explosivos al cajón con caída suave.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="imagenes/imagen10.png" alt="Saltos laterales de patinador" width="600" height="400" loading="lazy">
+                        <div class="texto-tarjeta">
+                            <h3>Saltos Laterales</h3>
+                            <p>3 series x 8 saltos por lado para potencia en el apoyo.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="imagenes/imagen11.png" alt="Salto reactivo desde cajón" width="600" height="400" loading="lazy">
+                        <div class="texto-tarjeta">
+                            <h3>Drop Jumps</h3>
+                            <p>4 series x 4 repeticiones buscando despegar rápido del suelo.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="imagenes/imagen12.png" alt="Salto horizontal a dos piernas" width="600" height="400" loading="lazy">
+                        <div class="texto-tarjeta">
+                            <h3>Salto Horizontal</h3>
+                            <p>4 series x 5 saltos largos para mejorar la zancada inicial.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="titulo-bloque">4. Velocidad y técnica</h3>
+                <div class="fila-galeria" id="cancha" tabindex="-1">
+                    <div class="tarjeta">
+                        <img src="imagenes/imagen13.png" alt="Sprints cortos de aceleración en fútbol" width="600" height="400" loading="lazy">
+                        <div class="texto-tarjeta">
+                            <h3>Sprints de 15m</h3>
+                            <p>6 salidas a máxima velocidad con descanso completo.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="imagenes/imagen14.png" alt="Freno y cambio de dirección en conos" width="600" height="400" loading="lazy">
+                        <div class="texto-tarjeta">
+                            <h3>Freno y Arranque</h3>
+                            <p>4 pasadas de desaceleración brusca y cambio de dirección.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="imagenes/imagen15.png" alt="Circuito de conducción y agilidad entre conos" width="600" height="400" loading="lazy">
+                        <div class="texto-tarjeta">
+                            <h3>Agilidad en Zigzag</h3>
+                            <p>4 repeticiones de desplazamiento rápido entre conos.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="imagenes/imagen16.png" alt="Ejercicio de plancha sobre fitball para estabilidad del core" width="600" height="400" loading="lazy">
+                        <div class="texto-tarjeta">
+                            <h3>Core Isométrico</h3>
+                            <p>3 series de 45 segundos para proteger la zona lumbar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="footer" tabindex="-1">
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <div class="footer-brand-header">
+                        <img src="iconos/favicon.svg" alt="Logo PRO10" class="footer-logo" width="28" height="28">
+                        <p class="brand-name">PRO<span class="text-neon">10</span></p>
+                    </div>
+                    <p>Proyecto personal de preparación física: fuerza de tren superior, tren inferior y pliometría aplicada al fútbol</p>
+                    <small>© 2026 PRO10 - Desarrollado por Italo Cardenas Ocmin</small>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Bloques de Rutina</h4>
+                    <a href="#tren-superior">1. Tren Superior</a>
+                    <a href="#tren-inferior">2. Tren Inferior</a>
+                    <a href="#pliometria">3. Pliometría</a>
+                    <a href="#cancha">4. Velocidad en Cancha</a>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Contacto y Redes</h4>
+                    <p>Correo: <a href="mailto:u202414856@upc.edu.pe">u202414856@upc.edu.pe</a></p>
+                    <div class="social-icons-wrapper">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook" class="social-icon" width="24" height="24"></a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="social-icon" width="24" height="24"></a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" class="social-icon" width="24" height="24"></a>
+                        <a href="https://x.com/" target="_blank" rel="noopener"><img src="https://cdn-icons-png.flaticon.com/512/145/145812.png" alt="Twitter" class="social-icon" width="24" height="24"></a>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
